@@ -1,0 +1,35 @@
+a.topbanner{
+    display: flex; gap: 20px; background-color: #FF8AAB; height: 70px; align-items: center; justify-content: center;
+}
+a.topbanner > img{
+    width: 43px;
+}
+a.topbanner > span.point{
+    background-color: #FFFE8D; padding: 9px 20px 6px 40px; box-sizing: border-box; width: 132px; position: relative; border-radius: 60px; font-size: 24px; color: #FF8AAB; 
+}
+a.topbanner > span.point > img{
+    width: 62px; height: auto; position: absolute; left: -22px; top: -10px;
+}
+a.topbanner > span.text{
+    font-size: 28px; color: #fff;
+}
+a.topbanner > span.text > b{
+    color: #FFFE8D; position: relative;
+}
+a.topbanner > span.text > b::after{
+    content: ''; position: absolute; left: 0; bottom: -8px; width: 100%; height: 8px; background: url("../images/line.svg") no-repeat center / 100% auto;
+}
+@media screen and (max-width:767px){
+    
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    
+}
+@media screen and (min-width:1280px){
+    .inner{
+        max-width: 1200px; margin: 0 auto;
+    }
+
+
+
+}

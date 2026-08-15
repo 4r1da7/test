@@ -1,3 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+html, body{
+    margin: 0; padding: 0;
+}
+a{
+    text-decoration: none;
+}
 .fontA{
     font-family: 'GMarketSans'; font-weight: 500;
 }
@@ -15,4 +24,60 @@
 }
 .fontF{
     font-family: 'KerisKeduLine';
+}
+
+header{
+    position: absolute; left: 50%; transform: translateX(-50%); top: 110px; display: flex; width: 1200px; align-items: center; justify-content: space-between; height: 42px;
+}
+header a{
+    display: block;
+}
+header img{
+    display: block;
+}
+header > div{
+    display: flex; align-items: center; gap: 20px;
+}
+header > div > a.login{
+    width: 84px; padding: 10px 20px; color: #000; border: 2px solid #000; border-radius: 40px; font-size: 16px; text-align: center;
+}
+nav{
+    position: fixed; right: 4.6%; top: 50%; transform: translateY(-50%); width: 185px; font-size: 16px; text-align: center; padding-top: 73px; background: url('../images/icon_nav_cha.svg') no-repeat center top / auto;
+}
+nav ol{
+    margin: 0; padding: 0; list-style-type: none;
+}
+nav ol li:not(:last-child){
+    padding: 20px 30px; color: #5A371E; background-color: #fff;
+}
+nav ol li:first-child{
+    border-radius: 20px 20px 0px 0px;
+}
+nav ol li:last-child{
+    padding: 10px 30px; background-color: #5A371E; border-radius: 0px 0px 20px 20px;
+}
+nav ol li:not(:last-child).active{
+    background-color: #FF9FBA; border: 2px solid #FF8AAB;
+}
+nav ol li:not(:last-child).active a{
+    color: #fff;
+}
+nav ol li:nth-child(4) > a{
+    padding-right: 20px; background: url("../images/icon_fire.svg") no-repeat center right / contain;
+}
+nav ol li:nth-child(5) > a{
+    padding-right: 23px; background: url('../images/icon_gift.svg') no-repeat center right / 18px auto;
+}
+nav ol li:not(:last-child) a {color: #5A371E;}
+nav ol li:last-child > a{
+    color: #fff; padding-right: 15px; background: url('../images/arrow2.svg') no-repeat center right / 12px auto;
+}
+@media screen and (max-width:767px){
+    
+}
+@media screen and (min-width:768px) and (max-width:1279px){
+    
+}
+@media screen and (min-width:1280px){
+    
 }
