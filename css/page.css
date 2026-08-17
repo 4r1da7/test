@@ -19,6 +19,9 @@ a.topbanner > span.text > b{
 a.topbanner > span.text > b::after{
     content: ''; position: absolute; left: 0; bottom: -8px; width: 100%; height: 8px; background: url("../images/line.svg") no-repeat center / 100% auto;
 }
+
+
+
 @media screen and (max-width:767px){
     
 }
@@ -26,10 +29,12 @@ a.topbanner > span.text > b::after{
     
 }
 @media screen and (min-width:1280px){
-    .inner{
+    [class^="box"]{
         max-width: 1200px; margin: 0 auto;
     }
-
+    .step1{
+        background: url("../images/graphic.png");
+    }
 
 
 }

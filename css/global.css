@@ -1,12 +1,3 @@
-*{
-    box-sizing: border-box;
-}
-html, body{
-    margin: 0; padding: 0;
-}
-a{
-    text-decoration: none;
-}
 .fontA{
     font-family: 'GMarketSans'; font-weight: 500;
 }
@@ -17,15 +8,8 @@ a{
     font-family: 'YeogiOttaeJalnan';
 }
 .fontD{
-    font-family: 'Pretendard';
-}
-.fontE{
-    font-family: 'OmuDaye';
-}
-.fontF{
     font-family: 'KerisKeduLine';
 }
-
 header{
     position: absolute; left: 50%; transform: translateX(-50%); top: 110px; display: flex; width: 1200px; align-items: center; justify-content: space-between; height: 42px;
 }
@@ -43,9 +27,6 @@ header > div > a.login{
 }
 nav{
     position: fixed; right: 4.6%; top: 50%; transform: translateY(-50%); width: 185px; font-size: 16px; text-align: center; padding-top: 73px; background: url('../images/icon_nav_cha.svg') no-repeat center top / auto;
-}
-nav ol{
-    margin: 0; padding: 0; list-style-type: none;
 }
 nav ol li:not(:last-child){
     padding: 20px 30px; color: #5A371E; background-color: #fff;
@@ -72,6 +53,12 @@ nav ol li:not(:last-child) a {color: #5A371E;}
 nav ol li:last-child > a{
     color: #fff; padding-right: 15px; background: url('../images/arrow2.svg') no-repeat center right / 12px auto;
 }
+footer{
+    background-color: #848484; color: #fff; padding: 60px 0 75px;
+}
+
+
+
 @media screen and (max-width:767px){
     
 }
