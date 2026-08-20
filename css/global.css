@@ -8,7 +8,7 @@
     font-family: 'YeogiOttaeJalnan';
 }
 .fontD{
-    font-family: 'KerisKeduLine';
+    font-family: 'KerisKedyuche';
 }
 header{
     position: absolute; left: 50%; transform: translateX(-50%); top: 110px; display: flex; width: 1200px; align-items: center; justify-content: space-between; height: 42px;

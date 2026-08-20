@@ -70,31 +70,47 @@ main > div.step2{
         position: relative; z-index: 3; width: 100%;
     }
     main > div.step2{
-        padding-top: 300px; position: absolute; top: 922px; left: 0; width: 100%;
+        position: relative; width: 100%; padding-top: 100px;
     }
-    main > div.step2 > section.box2 > img{
+    main > div.step2::before{
+        content: ''; position: absolute; left: 0; top: -128px; width: 100%; height: 300px; background-color: #B0EEAF; z-index: -1;
+    }
+    main > div.step2 > section.box2 > img:first-child{
         margin: 0 auto 10px;
     }
     main > div.step2 > section.box2 > h2{
         text-align: center; color: #000; font-size: 30px;
     }
     main > div.step2 > section.box2 > h2 > blockquote{
-        font-size: 64px; line-height: 96px; margin-bottom: 10px; color: #145412;
+        font-size: 64px; line-height: 96px; margin-bottom: 10px; color: #fff; -webkit-text-stroke: 2px #146414; text-shadow: 0 5px 0 #1F861D;
     }
     main > div.step2 > section.box2 > h2 > blockquote > b{
-        color: #fff;
+        color: #BBF4FF;
     }
     main > div.step2 > section.box2 > div.news{
-        background: url('../images/newspaper_bg.png') no-repeat center / 66.25% auto; position: relative;
+        background: url('../images/newspaper_bg.png') no-repeat center / 66.25% auto; position: relative; height: 600px;
     }
     main > div.step2 > section.box2 > div > img{
         position: absolute;
     }
-    main > div.step2 > section.box2 > div
-    
-
-    main > div.step3{
-        padding-top: 2000px;
+    main > div.step2 > section.box2 > div > img.news1{
+        left: 50%; top: 15%;
+    }
+    main > div.step2 > section.box2 > div > img.news2{
+        left: 10%; top: 40%;
+    }
+    main > div.step2 > section.box2 > div > img.news3{
+        left: 48%; top: 60%;
+    }
+    main > div.step2 > section.box2 > div > img.cha1{
+        left: 18%; top: 26%;
+    }
+    main > div.step2 > section.box2 > div > img.cha2{
+        right: 1%; bottom: -17%;
+    }
+    main > div.step2 > section.box2 > form > fieldset{
+        width: 100%; padding: 85px 60px; position: relative; border: 2px solid transparent; border-image-source: url('../images/stroke_form.svg'); border-image-slice: 2; border-image-repeat: round; box-sizing: border-box;
+        background-color: #fff;
     }
 
 
