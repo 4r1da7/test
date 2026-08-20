@@ -69,44 +69,45 @@
                             <li>
                                 <p class="fontB">주로 사용하는 퍼블리싱 기술/환경을 선택해 주세요. (복수 선택 가능)</p>
                                 <div class="fontA">
-                                    <input type="checkbox" name="skill1" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill1">
                                     <label for="skill1">HTML5</label>
-                                    <input type="checkbox" name="skill2" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill2">
                                     <label for="skill2">CSS3</label>
-                                    <input type="checkbox" name="skill3" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill3">
                                     <label for="skill3">JavaScript</label>
-                                    <input type="checkbox" name="skill4" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill4">
                                     <label for="skill4">jQuery</label>
-                                    <input type="checkbox" name="skill5" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill5">
                                     <label for="skill5">React</label>
-                                    <input type="checkbox" name="skill6" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill6">
                                     <label for="skill6">Vue</label>
-                                    <input type="checkbox" name="skill7" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill7">
                                     <label for="skill7">Figma</label>
-                                    <input type="checkbox" name="skill8" id="chkbox">
+                                    <input type="checkbox" name="chkbox" id="skill8">
                                     <label for="skill8">Photoshop </label>
                                 </div>
                             </li>
                             <li>
                                 <p class="fontB">가장 자신 있는 퍼블리싱 영역은 무엇인가요?</p>
                                 <div class="fontA">
-                                    <input type="radio" name="area1" id="radbox">
+                                    <input type="radio" name="radbox" id="area1">
                                     <label for="area1">반응형 웹</label>
-                                    <input type="radio" name="area2" id="radbox">
+                                    <input type="radio" name="radbox" id="area2">
                                     <label for="area2">프로모션/이벤트 페이지</label>
-                                    <input type="radio" name="area3" id="radbox">
+                                    <input type="radio" name="radbox" id="area3">
                                     <label for="area3">UI 컴포넌트/디자인 시스템</label>
-                                    <input type="radio" name="area4" id="radbox">
+                                    <input type="radio" name="radbox" id="area4">
                                     <label for="area4">CSS 애니메이션/인터랙션</label>
                                 </div>
                             </li>
                             <li>
-                                <p class="fontB">포트폴리오 또는 대표 작업물 URL을 작성해 주세요.<small class="fontA">퍼블리싱한 웹사이트 주소를 작성해주세요.</small></p>
-                                <input class="fontA" type="text" placeholder="Ex. 중학 국어 2-1(신유식)">
+                                <label class="fontB" for="urltxt">포트폴리오 또는 대표 작업물 URL을 작성해 주세요. <small class="fontA">퍼블리싱한 웹사이트 주소를 작성해주세요.</small></label>
+                                <input type="text" id="urltxt" class="fontA" placeholder="Ex. 중학 국어 2-1(신유식)" value="https://4r1da7.github.io/fermLIVING">
                             </li>
                             <li>
-                                <p class="fontB">이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요.<small class="fontA">마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.</small></p>
-                                <textarea class="fontA"></textarea>
+                                <label class="fontB" for="txtarea">이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고 싶은 점을 적어주세요. <small class="fontA">마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해 주세요.</small></label>
+                                <textarea class="fontA" id="txtarea" maxlength="2000"></textarea>
+                                <span class="count">0/2000</span>
                             </li>
                         </ul>
                     </fieldset>
@@ -116,16 +117,19 @@
         </div>
         <div class="step3" id="step3">
             <section class="box3">
-                <h2 class="fontD">외우는 역사가 아니라 <b>이해하는</b> <b>역사로!</b></h2>
+                <h2 class="fontD">외우는 역사가 아니라 <span><span><b>이해하는</b> 역사로!</span></span></h2>
                 <p class="fontA">한국사 전문가 연희쌤과 ZOOM으로 함께하는 초등 맞춤형 라이브 수업을 체험해 보세요!</p>
                 <div class="videobox">
-                    <video src=""></video>
+                    <div class="video">
+                        <video poster="images/thumbnail.png" src=""></video>
+                        <button type="button">영상 재생</button>
+                    </div>
+                    <ul class="fontA">
+                        <li>초등 사회 전문 선생님&amp;친구들과 함께하는 ‘무료’ LIVE 수업</li>
+                        <li>외우지 않아도 이해되는, 아이 눈높이 역사 수업</li>
+                        <li>6월의 의미를 배우고, 스스로 생각하는 힘이 자라는 시간</li>
+                    </ul>
                 </div>
-                <ul class="fontA">
-                    <li>초등 사회 전문 선생님&amp;친구들과 함께하는 ‘무료’ LIVE 수업</li>
-                    <li>외우지 않아도 이해되는, 아이 눈높이 역사 수업</li>
-                    <li>6월의 의미를 배우고, 스스로 생각하는 힘이 자라는 시간</li>
-                </ul>
             </section>
         </div>
         <div class="step4" id="step4">
@@ -191,6 +195,15 @@
                     <b>수업·후기 개수와 관계없이 기프티콘은 회원정보에 등록된 번호로 최초 1회만 지급됩니다.</b></li>
                 <li><b>기프티콘은 재고 상황에 따라 변경될 수 있으며, 유효기간 만료 후 연장 및 환불은 불가합니다.</b></li>
                 <li>작성된 후기는 추후 초코타임 수업 및 마케팅 홍보물에 활용될 수 있습니다. </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="https://www.miraenchoco.com/helpdesk/inquiry">1:1 문의</a></li>
+                <li><a href="https://www.instagram.com/miraenkids/">인스타그램</a></li>
+                <li><a href="https://www.youtube.com/c/miraen_official">유튜브</a></li>
+                <li><a href="https://blog.naver.com/mirae-n">블로그</a></li>
+                <li><a href="https://www.facebook.com/HAPPY.miraeN">페이스북</a></li>
             </ul>
         </div>
     </footer>

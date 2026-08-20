@@ -25,6 +25,9 @@ header, nav{
 main > div.step2{
     background-color: #B0EEAF;
 }
+/* main > div.step3{
+    background-color: #FDD7E3;
+} */
 
 @media screen and (max-width:767px){
     
@@ -70,7 +73,7 @@ main > div.step2{
         position: relative; z-index: 3; width: 100%;
     }
     main > div.step2{
-        position: relative; width: 100%; padding-top: 100px;
+        position: relative; width: 100%; padding: 100px 0 125px;
     }
     main > div.step2::before{
         content: ''; position: absolute; left: 0; top: -128px; width: 100%; height: 300px; background-color: #B0EEAF; z-index: -1;
@@ -94,26 +97,106 @@ main > div.step2{
         position: absolute;
     }
     main > div.step2 > section.box2 > div > img.news1{
-        left: 50%; top: 15%;
+        left: 46%; top: 14%;
     }
     main > div.step2 > section.box2 > div > img.news2{
-        left: 10%; top: 40%;
+        left: 5%; top: 38%;
     }
     main > div.step2 > section.box2 > div > img.news3{
-        left: 48%; top: 60%;
+        left: 40%; top: 58%;
     }
     main > div.step2 > section.box2 > div > img.cha1{
-        left: 18%; top: 26%;
+        left: 11%; top: 24%;
     }
     main > div.step2 > section.box2 > div > img.cha2{
-        right: 1%; bottom: -17%;
+        right: 3%; bottom: -13%; z-index: 2;
     }
     main > div.step2 > section.box2 > form > fieldset{
-        width: 100%; padding: 85px 60px; position: relative; border: 2px solid transparent; border-image-source: url('../images/stroke_form.svg'); border-image-slice: 2; border-image-repeat: round; box-sizing: border-box;
-        background-color: #fff;
+        width: 100%; padding: 85px 60px; position: relative; border: 2px solid transparent; border-image-source: url('../images/stroke_form.svg'); border-image-slice: 2; border-image-repeat: round; box-sizing: border-box; background-color: #fff;
     }
-
-
+    main > div.step2 > section.box2 > form > fieldset > ul > li{
+        position: relative; color: #333333;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li:not(:last-child){
+        margin-bottom: 90px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li:not(:first-child)::before{
+        content: ''; width: 100%; height: 3px; position: absolute; left: 0; top: -44px; background: url('../images/form_line.png') no-repeat center / 100% auto;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > p,
+    main > div.step2 > section.box2 > form > fieldset > ul > li > label{
+        font-size: 32px; margin-bottom: 35px; line-height: 38px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > label{
+        display: block;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li small{
+        font-size: 16px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox'],
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']{
+        display: none;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div::after{
+        display: block; content: ''; clear: both;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label{
+        display: block; font-size: 24px; width: 200px; padding: 15px 0; text-align: center; border: 1px solid #666666; float: left; border-radius: 50px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label:not(:last-of-type){
+        margin-right: 16px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label:nth-of-type(-n+4){
+        margin-bottom: 16px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']:checked+label{
+        color: #02A39F; border-color: #02A39F; background-color: #E6F6F6;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']+label{
+        font-size: 24px; padding-left: 34px; background: url('../images/icon_chk_off.svg') no-repeat left center / 24px 24px; letter-spacing: -6%;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']+label:not(:first-of-type){
+        margin-left: 25px;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']:checked+label{
+        background-image: url('../images/icon_chk_on.svg');
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='text']{
+        padding: 20px; width: 50%; box-sizing: border-box; font-size: 24px; color: #333333;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='text']::placeholder{
+        color: #C3C3C3;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > textarea{
+        resize: none; color: #333333; width: 100%; padding: 20px; height: 217px; box-sizing: border-box; border: 2px solid transparent; border-image-slice: 2; border-image-source: url('../images/textarea_line.svg'); border-image-repeat: round;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > textarea:focus{
+        border-color: #02A39F; outline: none;
+    }
+    main > div.step2 > section.box2 > form > fieldset > ul > li > span.count{
+        position: absolute; bottom: 10px; right: 20px;
+    }
+    main > div.step2 > section.box2 > form > input[type='submit']{
+        margin: 50px auto 0; display: block; font-size: 50px; color: #333333; background-color: #FDED7C; width: 50%; padding: 25px 0; border-radius: 80px; border: 2px solid #333333; box-shadow: 0 4px 0 #333333;
+    }
+    main > div.step3{
+        padding: 220px 0 100px; background: url('../images/태극기연.svg') no-repeat center top 78px /  12% auto, url('../images/star.svg') no-repeat right 18.75% top 170px / 3.5% auto #FDD7E3;
+    }
+    main > div.step3 > section.box3 > h2{
+        text-align: center; font-size: 56px; color: #5A371E; margin-bottom: 35px;
+    }
+    main > div.step3 > section.box3 > h2 > span{
+        position: relative;
+    }
+    main > div.step3 > section.box3 > h2 > span::before{
+        content: ''; position: absolute; left: 0; bottom: 0; background: url('../images/line2.svg') no-repeat center / 100% auto; width: 100%; height: 20px
+    }
+    main > div.step3 > section.box3 > h2 > span > span{
+        font-size: 64px; -webkit-text-stroke: 2px #5A371E; color: #fff; filter: drop-shadow(0 5px 0 #5A371E); 
+    }
+    main > div.step3 > section.box3 > h2 > span > span > b{
+        background-image: linear-gradient(to right, #FFFE8D, #FFE14B); background-clip: text; color: transparent; -webkit-background-clip: text;
+    }
 
 
 }
