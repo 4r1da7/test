@@ -28,6 +28,9 @@ main > div.step2{
 /* main > div.step3{
     background-color: #FDD7E3;
 } */
+main > div.step5{
+    background: url('../images/bg_wall.png') no-repeat center / 100% 100%;
+}
 
 @media screen and (max-width:767px){
     
@@ -228,7 +231,7 @@ main > div.step2{
         margin-bottom: 15px;
     }
     main > div.step4{
-        background: url('../images/bg_tab.png') no-repeat center bottom / 100% auto #FFF6C8;
+        position: relative; background: url('../images/bg_tab.png') no-repeat center bottom / 100% auto, url('../images/stroke_tab.svg') no-repeat center top 300px / 100% auto #FFF6C8; padding: 100px 0 140px;
     }
     main > div.step4 > section.box4 > div.tabs > ul.tabcontent > li{
         display: none;
@@ -236,9 +239,70 @@ main > div.step2{
     main > div.step4 > section.box4 > div.tabs > ul.tabcontent > li.active{
         display: block;
     }
+    main > div.step4 > section.box4{
+        width: 62.5%;
+    }
+    main > div.step4 > section.box4 > h2{
+        font-size: 56px; color: #5A371E; text-align: center; padding-top: 65px; background: url('../images/logo_chocopop.svg') no-repeat center top / 114px 55px; margin-bottom: 50px;
+    }
+    main > div.step4 > section.box4 > button{
+        position: absolute; width: 70px; height: 70px; background-color: transparent; border-style: none; top: 50%;
+    }
+    main > div.step4 > section.box4 > button:first-of-type{
+        left: 13%;
+    }
+    main > div.step4 > section.box4 > button:last-of-type{
+        right: 13%;
+    }
+    main > div.step4 > section.box4 > ul.subj{
+        width: 42.55%; position: absolute; left: 50%; top: 275px; transform: translateX(-50%);
+    }
+    main > div.step4 > section.box4 > ul.subj::after{
+        display: block; content: ''; clear: both;
+    }
+    main > div.step4 > section.box4 > ul.subj > li{
+        float: left; width: 22.7%;
+    }
+    main > div.step4 > section.box4 > ul.subj > li:not(:first-child){
+        margin-left: 3%;
+    }
 
-
-    
+    main > div.step4 > section.box4 > ul.subj > li > button{
+        letter-spacing: -4%; padding: 20px 0; width: 100%; text-align: center; color: #888888; border-style: none; background: url('../images/tape_white.png') no-repeat center / 100% auto ; font-size: 32px; line-height: 38px;
+    }
+    main > div.step4 > section.box4 > ul.subj > li > button.active{
+        font-weight: 700; color: #fff;
+    }
+    main > div.step4 > section.box4 > ul.subj > li:first-child > button.active{
+        background-image: url('../images/tape_yellow.png'); 
+    }
+    main > div.step4 > section.box4 > ul.subj > li:nth-child(2) > button.active{
+        background-image: url('../images/tape_red.png');
+    }
+    main > div.step4 > section.box4 > ul.subj > li:nth-child(3) > button.active{
+        background-image: url('../images/tape_blue.png');
+    }
+    main > div.step4 > section.box4 > ul.subj > li:last-child > button.active{
+        background-image: url('../images/tape_green.png');
+    }
+    main > div.step4 > section.box4 > div.tabs{
+        width: 100%; margin: 0 auto;
+    }
+    main > div.step5{
+        padding: 115px 0 225px;
+    }
+    main > div.step5 > section.box5 > h2{
+        text-align: center; margin-bottom: 50px;
+    }
+    main > div.step5 > section.box5 > h2 > img{
+        margin: 0 auto 40px; width: 382px;
+    }
+    main > div.step5 > section.box5 > h2 > small{
+        display: block; font-size: 52px; color: #552911; letter-spacing: -3%;
+    }
+    main > div.step5 > section.box5 > h2 > b{
+        font-size: 64px; color: #fff; text-shadow: 0 5px 0 #552911; -webkit-text-stroke: 2px #552911;
+    }
 
 
 }
