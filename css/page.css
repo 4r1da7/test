@@ -227,9 +227,15 @@ main > div.step2{
     main > div.step3 > section.box3 > div.videobox > ul > li:not(:last-child){
         margin-bottom: 15px;
     }
-
-
-
+    main > div.step4{
+        background: url('../images/bg_tab.png') no-repeat center bottom / 100% auto #FFF6C8;
+    }
+    main > div.step4 > section.box4 > div.tabs > ul.tabcontent > li{
+        display: none;
+    }
+    main > div.step4 > section.box4 > div.tabs > ul.tabcontent > li.active{
+        display: block;
+    }
 
 
     

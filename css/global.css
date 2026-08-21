@@ -66,19 +66,18 @@ footer div h3,
 footer b{
     font-weight: 500;
 }
-footer div ul{
+footer div:first-child ul{
     line-height: 40px;
 }
-footer div ul:first-of-type{
+footer div:first-child ul:first-of-type{
     margin-bottom: 45px;
 }
-footer div ul li{
+footer div:first-child ul li{
     padding-left: 15px; position: relative;
 }
-footer div ul li::before{
+footer div:first-child ul li::before{
     content: '-'; position: absolute; left: 0;
 }
-
 footer b{
     text-decoration: underline; text-underline-offset: 7px;
 }
