@@ -1,3 +1,4 @@
+html{scroll-behavior: smooth;}
 .fontA{
     font-family: 'GMarketSans'; font-weight: 500;
 }
@@ -11,7 +12,7 @@
     font-family: 'KerisKedyuche';
 }
 header{
-    position: absolute; left: 50%; transform: translateX(-50%); top: 110px; display: flex; width: 1200px; align-items: center; justify-content: space-between; height: 42px;
+    position: absolute; left: 50%; transform: translateX(-50%); top: 110px; display: flex; align-items: center; justify-content: space-between; height: 42px;
 }
 header a{
     display: block;
@@ -99,8 +100,12 @@ footer > div:last-child > ul > li:nth-child(5) > a{background: url('../images/ic
     
 }
 @media screen and (min-width:768px) and (max-width:1279px){
-    
+    header{
+        width: 90%;
+    }
 }
 @media screen and (min-width:1280px){
-    
+    header{
+        width: 1200px;
+    }
 }
