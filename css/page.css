@@ -87,10 +87,10 @@ main > div.step5{
     main > div.step2 > section.box2 > h2{
         text-align: center; color: #000; font-size: 30px;
     }
-    main > div.step2 > section.box2 > h2 > blockquote{
+    main > div.step2 > section.box2 > h2 > span{
         font-size: 64px; line-height: 96px; margin-bottom: 10px; color: #fff; -webkit-text-stroke: 2px #146414; text-shadow: 0 5px 0 #1F861D;
     }
-    main > div.step2 > section.box2 > h2 > blockquote > b{
+    main > div.step2 > section.box2 > h2 > span > b{
         color: #BBF4FF;
     }
     main > div.step2 > section.box2 > div.news{
@@ -126,7 +126,7 @@ main > div.step5{
     main > div.step2 > section.box2 > form > fieldset > ul > li:not(:first-child)::before{
         content: ''; width: 100%; height: 3px; position: absolute; left: 0; top: -44px; background: url('../images/form_line.png') no-repeat center / 100% auto;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > p,
+    main > div.step2 > section.box2 > form > fieldset > ul > li legend,
     main > div.step2 > section.box2 > form > fieldset > ul > li > label{
         font-size: 32px; margin-bottom: 35px; line-height: 38px;
     }
@@ -136,38 +136,38 @@ main > div.step5{
     main > div.step2 > section.box2 > form > fieldset > ul > li small{
         font-size: 16px;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox'],
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='checkbox'],
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='radio']{
         display: none;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div::after{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div::after{
         display: block; content: ''; clear: both;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='checkbox']+label{
         display: block; font-size: 24px; width: 200px; padding: 15px 0; text-align: center; border: 1px solid #666666; float: left; border-radius: 50px;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label:not(:last-of-type){
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='checkbox']+label:not(:last-of-type){
         margin-right: 16px;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']+label:nth-of-type(-n+4){
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='checkbox']+label:nth-of-type(-n+4){
         margin-bottom: 16px;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='checkbox']:checked+label{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='checkbox']:checked+label{
         color: #02A39F; border-color: #02A39F; background-color: #E6F6F6;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']+label{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='radio']+label{
         font-size: 24px; padding-left: 34px; background: url('../images/icon_chk_off.svg') no-repeat left center / 24px 24px; letter-spacing: -6%;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']+label:not(:first-of-type){
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='radio']+label:not(:first-of-type){
         margin-left: 25px;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > div > input[type='radio']:checked+label{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > fieldset > div > input[type='radio']:checked+label{
         background-image: url('../images/icon_chk_on.svg');
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='text']{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='url']{
         padding: 20px; width: 50%; box-sizing: border-box; font-size: 24px; color: #333333;
     }
-    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='text']::placeholder{
+    main > div.step2 > section.box2 > form > fieldset > ul > li > input[type='url']::placeholder{
         color: #C3C3C3;
     }
     main > div.step2 > section.box2 > form > fieldset > ul > li > textarea{
@@ -266,7 +266,6 @@ main > div.step5{
     main > div.step4 > section.box4 > ul.subj > li:not(:first-child){
         margin-left: 3%;
     }
-
     main > div.step4 > section.box4 > ul.subj > li > button{
         letter-spacing: -4%; padding: 20px 0; width: 100%; text-align: center; color: #888888; border-style: none; background: url('../images/tape_white.png') no-repeat center / 100% auto ; font-size: 32px; line-height: 38px;
     }
