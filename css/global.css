@@ -54,7 +54,7 @@ nav ol li:last-child > a{
     color: #fff; padding-right: 15px; background: url('../images/arrow2.svg') no-repeat center right / 12px auto;
 }
 footer{
-    background-color: #848484; color: #fff; padding: 60px 0 75px; font-size: 22px;
+    background-color: #848484; color: #fff; padding: 60px 0 100px; font-size: 22px;
 }
 footer div h2{
     font-size: 40px; padding-left: 53px; line-height: 43px; background: url('../images/icon_bang.svg') no-repeat left center / 43px; margin-bottom: 40px;
@@ -65,6 +65,9 @@ footer div h3{
 footer div h3,
 footer b{
     font-weight: 500;
+}
+footer div:first-child{
+    margin-bottom: 50px;
 }
 footer div:first-child ul{
     line-height: 40px;
@@ -81,6 +84,17 @@ footer div:first-child ul li::before{
 footer b{
     text-decoration: underline; text-underline-offset: 7px;
 }
+footer > div:last-child > ul{
+    display: flex; justify-content: center; gap: 30px;
+}
+footer > div:last-child > ul > li:not(:first-child) > a{
+    text-indent: -9999px; display: block; width: 30px; height: 30px; border: 2px solid #666; border-radius: 10px;
+}
+footer > div:last-child > ul > li:nth-child(1) > a{font-size: 16px; color: #fff;}
+footer > div:last-child > ul > li:nth-child(2) > a{background: url('../images/icon_instagram.svg') no-repeat center / 100% auto;}
+footer > div:last-child > ul > li:nth-child(3) > a{background: url('../images/icon_youtube.svg') no-repeat center / 100% auto;}
+footer > div:last-child > ul > li:nth-child(4) > a{background: url('../images/icon_blog.svg') no-repeat center / 100% auto;}
+footer > div:last-child > ul > li:nth-child(5) > a{background: url('../images/icon_facebook.svg') no-repeat center / 100% auto;}
 @media screen and (max-width:767px){
     
 }

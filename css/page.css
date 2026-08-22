@@ -25,9 +25,6 @@ header, nav{
 main > div.step2{
     background-color: #B0EEAF;
 }
-/* main > div.step3{
-    background-color: #FDD7E3;
-} */
 main > div.step5{
     background: url('../images/bg_wall.png') no-repeat center / 100% 100%;
 }
@@ -171,7 +168,7 @@ main > div.step5{
         color: #C3C3C3;
     }
     main > div.step2 > section.box2 > form > fieldset > ul > li > textarea{
-        resize: none; color: #333333; width: 100%; padding: 20px; height: 217px; box-sizing: border-box; border: 2px solid transparent; border-image-slice: 2; border-image-source: url('../images/textarea_line.svg'); border-image-repeat: round;
+        font-size: 16px; resize: none; color: #333333; width: 100%; padding: 20px; height: 217px; box-sizing: border-box; border: 2px solid transparent; border-image-slice: 2; border-image-source: url('../images/textarea_line.svg'); border-image-repeat: round;
     }
     main > div.step2 > section.box2 > form > fieldset > ul > li > textarea:focus{
         border-color: #02A39F; outline: none;
@@ -347,8 +344,4 @@ main > div.step5{
     div.botbanner > p > a{
         display: inline-block; border: 2px solid #fff; box-shadow: 0 5px 0 #fff; border-radius: 30px; box-sizing: border-box; padding: 0 80px 0 30px; color: #fff; font-size: 24px; margin-left: 3.75%; width: 185px; background: url('../images/arrow1.svg') no-repeat right 20px center / 43px auto #FF8296;
     }
-
-
-
-
 }
