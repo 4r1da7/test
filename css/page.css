@@ -332,4 +332,15 @@ main > div.step5{
     main > div.step5 > section.box5 > a > img{
         position: absolute; right: 8%; top: 70%;
     }
+    div.botbanner{
+        width: 62.5%; position: fixed; bottom: 0; left: 18.75%; z-index: 10; background-color: #331D0A;
+    }
+
+
+
+
+
+
+
+
 }
