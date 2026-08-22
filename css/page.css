@@ -243,7 +243,7 @@ main > div.step5{
         width: 62.5%;
     }
     main > div.step4 > section.box4 > h2{
-        font-size: 56px; color: #5A371E; text-align: center; padding-top: 65px; background: url('../images/logo_chocopop.svg') no-repeat center top / 114px 55px; margin-bottom: 50px;
+        font-size: 56px; letter-spacing: -6%; color: #5A371E; text-align: center; padding-top: 65px; background: url('../images/logo_chocopop.svg') no-repeat center top / 114px 55px; margin-bottom: 50px;
     }
     main > div.step4 > section.box4 > button{
         position: absolute; width: 70px; height: 70px; background-color: transparent; border-style: none; top: 50%;
@@ -333,12 +333,20 @@ main > div.step5{
         position: absolute; right: 8%; top: 70%;
     }
     div.botbanner{
-        width: 62.5%; position: fixed; bottom: 0; left: 18.75%; z-index: 10; background-color: #331D0A;
+        width: 62.5%; min-width: 1200px; position: fixed; bottom: 0; left: 50%; transform: translateX(-50%); z-index: 10; background-color: #5A371E; border-color: #331D0A; border-style: solid; border-width: 3px 3px 0 3px; border-radius: 30px 30px 0 0; box-sizing: border-box;
     }
-
-
-
-
+    div.botbanner > p{
+        white-space: nowrap; font-size: 32px; position: relative; text-align: center; color: #fff; padding: 10px 0;
+    }
+    div.botbanner > p::before{
+        content: ''; position: absolute; bottom: 0; left: 1%; width: 18.75%; height: 120px; background: url('../images/icon_giraffe.svg') no-repeat left bottom / 100% auto;
+    }
+    div.botbanner > p > b{
+        color: #FF8296;
+    }
+    div.botbanner > p > a{
+        display: inline-block; border: 2px solid #fff; box-shadow: 0 5px 0 #fff; border-radius: 30px; box-sizing: border-box; padding: 0 80px 0 30px; color: #fff; font-size: 24px; margin-left: 3.75%; width: 185px; background: url('../images/arrow1.svg') no-repeat right 20px center / 43px auto #FF8296;
+    }
 
 
 
